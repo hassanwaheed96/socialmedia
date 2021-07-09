@@ -1,0 +1,265 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #d3d3d3;
+}
+
+.container {
+    width: 90%;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.container-fluid {
+    width: 90%;
+    max-width: 1920px;
+}
+
+.hidden {
+    display: none;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.navbar {
+    background-color: #003366;
+}
+
+.navbar-collapse {
+    flex-grow: 0;
+}
+
+.nav-item {
+    padding-left: 15px;
+}
+
+.nav-item:first-of-type {
+    padding-left: 0;
+}
+
+.nav-link {}
+
+.mismatch-password,
+.loginSignup-navbar ul {
+    display: none;
+}
+
+.display-shown {}
+
+form {
+    width: 50%;
+    margin: auto;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    padding: 15px 0;
+}
+
+.form-wrapper {
+    width: 90%;
+    margin: auto;
+}
+
+/* Full-width input fields */
+input[type=text],
+input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+input[type=text]:focus,
+input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+button:hover {
+    opacity: 1;
+}
+
+/* Extra styles for the cancel button */
+
+.cancelbtn {
+    padding: 14px 20px;
+    background-color: #f44336;
+}
+
+/* Add padding to container elements */
+.container {
+    padding: 16px;
+}
+
+/* Clear floats */
+.button-wrapper::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+#signup-form {
+    display: none;
+}
+
+.login-link {
+    color: dodgerblue;
+}
+
+/* section 2 card */
+.card .card-body textarea {
+    width: 100%;
+}
+
+.card-button {
+    text-align: right;
+}
+
+/* section 3 card */
+.card {
+    flex-direction: row;
+    /* margin-bottom: 20px; */
+    padding: 15px;
+    box-shadow: 2px 4px 6px #888888;
+}
+
+.card:hover {
+    box-shadow: none;
+}
+
+.card-img,
+.card-img-top {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+/* Friend Request Page */
+.friendRequests .card {
+    width: 50%;
+}
+
+.friendRequests .card .request-button {}
+
+/* Message */
+.message {}
+
+.message .row {}
+
+.message .row .left {
+    width: 33%;
+    background-color: #fff;
+    padding: 0;
+}
+
+.message .row .left .card {
+    margin-bottom: 0;
+    display: block;
+}
+
+.message .row .left .card-button button {
+    width: 33%;
+}
+
+.message .row .right {
+    width: 66%;
+    padding-right: 0;
+}
+
+.message .row .right {}
+
+.message .row .right .card {
+    margin-bottom: 0;
+}
+
+.message .row .right .chat-window {}
+
+.message .row .right .chat-window .chat-box {
+    height: 364px;
+    background-color: #fff;
+    overflow-y: scroll;
+}
+
+.message .row .right .chat-window .chat-box .user-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.message .row .right .chat-window .chat-box .single-thread {
+    padding: 15px;
+}
+
+.message .row .right .chat-window .chat-box .chat-content {
+    padding: 0 15px;
+}
+
+.message .row .right .chat-window .chat-box .chat-sender .chat-content h5 {
+    text-align: right;
+}
+
+.message .row .right .chat-window .chat-box .chat-sender .chat-content:last-child {
+    text-align: right;
+}
+
+.message .right .start-conversation {
+    background-color: #fff;
+    box-shadow: 0px 3px 6px #00000029;
+}
+
+.message .right .start-conversation img {
+    width: 100%;
+}
+
+.message .right .start-conversation p {
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 0;
+    padding-bottom: 1rem;
+}
+
+.message .right .chat {
+    display: none;
+}
+
+/* Add as friend page css */
+.friendRequests .card {
+    display: block;
+}
+
+.friendRequests .card h5 {}
+
+.friendRequests .add-friend-btn {
+    width: 20%;
+}
+
+.card-button {
+    text-align: right;
+}
+
+/* Accept friend request page */
+

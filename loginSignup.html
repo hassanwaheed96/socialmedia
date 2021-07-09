@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Social Media App</title>
+</head>
+
+<body onload="savedUser()">
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">MeetIn</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item hidden">
+                            <a class="nav-link" aria-current="page" href="index.html"><img src="images/home.png" alt=""></a>
+                        </li>
+                        <li class="nav-item hidden">
+                            <a class="nav-link" href="friendRequest.html">Friend Request</a>
+                        </li>
+                        <li class="nav-item hidden">
+                            <a class="nav-link" href="addFriend.html">Add Friend</a>
+                        </li>
+                        <li class="nav-item hidden">
+                            <a class="nav-link" href="message.html">Messages</a>
+                        </li>
+                        <li class="nav-item hidden">
+                            <a class="nav-link" href="loginSignup.html">Sign Out</a>
+                        </li>
+                        <li class="nav-item pointer" id="signup-nav">
+                            <a class="nav-link" onclick="toSignup()">Sign up</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section >
+        <div class="container">
+
+            <!-- Sign up Form -->
+            <form id="signup-form">
+                <div class="form-wrapper">
+                    <h1>Sign Up</h1>
+                    <p>Please fill in this form to create an account.</p>
+                    <hr>    
+
+                    <label for="name"><b>Name</b></label>
+                    <input type="text" placeholder="Enter Name" name="name" id="register-name" required autofocus>
+
+                    <label for="email"><b>Email</b></label>
+                    <input type="text" placeholder="Enter Email" name="email" id="register-email" required>
+                    <p id="email-exists" class="text-danger hidden">Email already exists</p>
+
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" id="register-password" required>
+
+                    <label for="psw-repeat"><b>Repeat Password</b></label>
+                    <input type="password" placeholder="Repeat Password" name="psw-repeat" id="register-password-repeat"
+                        required>
+                    <p id="mismatch-password" class="hidden text-danger">Password doesnot match</p>
+
+                    <!-- <label>
+                        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+                    </label> -->
+
+                    <p>Already have an account? <a href="#" class="login-link" onclick="toLogin()">Login</a>
+                    </p>
+
+                    <div class="button-wrapper">
+                        <!-- <button type="button" class="cancelbtn">Cancel</button> -->
+                        <button type="button" class="signupbtn" onclick="onSignupButton()">Sign Up</button>
+                    </div>
+                </div>
+            </form>
+
+            <!-- Login Form -->
+            <form id="login-form">
+                <div class="form-wrapper">
+                    <h1>Login</h1>
+                    <p>Please fill in this form to login.</p>
+                    <hr>
+
+                    <p id="incorrect-email-password" class="hidden text-danger">Incorrect email or password</p>
+                    <label for="email"><b>Email</b></label>
+                    <input type="text" placeholder="Enter Email" name="email" id="login-email" required autofocus>
+
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" id="login-password" required>
+
+                    <!-- <label>
+                        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+                    </label> -->
+
+                    <p>Don't have an account? <a href="#" class="login-link" onclick="toSignup()">Register</a>
+                    </p>
+
+                    <div class="button-wrapper">
+                        <!-- <button type="button" class="cancelbtn">Cancel</button> -->
+                        <button class="loginbtn" type="button" onclick="onLoginButton()">Login</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
